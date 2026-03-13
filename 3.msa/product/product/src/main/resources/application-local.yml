@@ -48,8 +48,8 @@ logging:
 
 aws:
   credentials:
-    access-key: AKIA55PBUXURG3RBO75W
-    secret-key: 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
+    access-key: xxx
+    secret-key: yyy
   region: ap-northeast-2
   s3:
     bucket1: yun-board-profile-image
