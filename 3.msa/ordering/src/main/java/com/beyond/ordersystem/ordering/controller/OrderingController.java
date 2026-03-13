@@ -19,7 +19,7 @@ public class OrderingController {
     }
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody List<OrderCreateDto> orderCreateDtoList, @RequestHeader("X-User-Email") String email) {
-        Long id = orderingService.create(orderCreateDtoList, email);
+        Long id = orderingService.createFeign(orderCreateDtoList, email);
         return ResponseEntity.status(HttpStatus.CREATED).body(id);
     }
 

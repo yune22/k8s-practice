@@ -6,7 +6,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ordersystem-ingress
-  namespace: yun-ns
+  namespace: yun-ns 
   annotations:
     kubernetes.io/ingress.class: nginx
     
